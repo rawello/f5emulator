@@ -41,10 +41,16 @@ function initYAPF5simylator() {
             if (event.data.type === "showUpdatePost") {
                 let _html = $(event.data.updtPost);
                 let updtPosts = _html.find("table[id^='p_row_']");
-                if (updtPosts == null) { alert('ahtung'); }
                 let updtPages =
                     _html.find('.row3:first tr:last td:first a[href!="#"]');
-                if (updtPages.length > pages) {alert('Новая страница');}
+                if (updtPages.length > pages) 
+                {
+                          if(confirm('Доступна новая страница, перейти?')) {
+                        window.location.href=updtPages.eq(updtPages.length-2).attr("href");
+                    } else {
+                        clearInterval(updtInterval);
+                    }
+                }
                 if (updtPosts.length <= postsCount) { return; }
                 for (let i = postsCount; i < updtPosts.length; i++) {
                     $('form[name="collect"]').append('<table width="100%" ' + 'border="0" cellspacing="1" cellpadding="3" id="peep' + i + '" class="f5simylatorpost f5new">' + updtPosts.eq(i).html() + '</table>' + '<div class="darkrow1" style="height:5px"></div>');}
