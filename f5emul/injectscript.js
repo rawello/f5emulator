@@ -13,6 +13,11 @@ function initYAPF5simylator() {
     // }
     setInterval("updte()", 5000);
     window.addEventListener("message", function(event) {
+        $('.f5new').hover(
+            function () {
+                $("#peep").removeClass("f5simylatorpost f5new");
+            }
+        )
         if (event.source !== window) {return;}
         if (event.data.type) {
             if (event.data.type === "showUpdatePost") {
@@ -35,7 +40,7 @@ function initYAPF5simylator() {
                     $('form[name="collect"]').append(
                         '<table width="100%" ' +
                         'border="0" cellspacing="1" cellpadding="3" id="peep' +
-                        i +
+                        // i +
                         '" class="f5simylatorpost f5new">' +
                         updtPosts.eq(i).html() + '</table>' +
                         '<div class="darkrow1" style="height:5px"></div>');
@@ -51,11 +56,11 @@ function initYAPF5simylator() {
     });
     // $("f5simylatorpost f5new").mouseover(function() {
     //     alert('ahtung');
-    //$(class{"f5simylatorpost f5new"}).css("background-color", "lightgray");
+    // $(class{"f5simylatorpost f5new"}).css("background-color", "lightgray");
     //   (this).removeClass("f5simylatorpost f5new");
     // if ($(".f5new").length === 0)
     // $('link[rel="shortcut icon"]').attr("href", "/favicon.ico");
-    //return false;
+    // return false;
     // }
     // )
 }
