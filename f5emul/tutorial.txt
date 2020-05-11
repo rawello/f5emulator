@@ -1,0 +1,29 @@
+Чтобы установить расширение в браузер хром, нам нужно сделать несколько действий
+1.Открыть настройки,вкладку Расширения(Extensions)
+2.Включить Режим Разработчика(Developer mode), кнопка справа вверху.
+3.Нажать кнопку загрузить распакованным(load unpacked)
+4.Выбрать наше расширение.
+5.У нас появилось расширение, нажать Детали(Details)
+6.В деталях будет пункт Доступ к сайтам(site access), нужно добавить два сайта- https://www.yaplakal.com/* и http://www.yaplakal.com/*
+7.Настройка расширения закончена, чтобы все работало, обновите текущие страница ЯП'а
+
+
+Тех.поддержка: ravenmihan@gmail.com
+
+
+___________________________________
+English:
+
+
+
+We need to do some action.
+1.Open settings, Extensions tab
+2.Turn on the Developer mode, the button in the upper right.
+3. Press the download button unpacked
+4. Choose our extension.
+5. We have an extension, click Details
+6. In detail there will be a site access point (site access), you need to add two sites- https://www.yaplakal.com/* and http://www.yaplakal.com/*
+7.Adjustment of the extension is completed, so that everything works, refresh the current page of YaP
+
+
+Support: ravenmihan@gmail.com
