@@ -8,7 +8,6 @@ document.querySelector('head').appendChild(script);
 let loadstr = document.body.getAttribute("onLoad");
 loadstr = (loadstr === null) ? "" : loadstr;
 document.body.setAttribute("onLoad", loadstr + " initYAPF5simylator();");
-//== Livequery  в 1.2.6 нету live =(
 script = document.createElement("script");
 script.setAttribute("type", "text/javascript");
 script.setAttribute("src", livequeryJS);
