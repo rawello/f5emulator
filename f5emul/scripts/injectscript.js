@@ -53,7 +53,13 @@ function initYAPF5simylator() {
                 }
                 if (updtPosts.length <= postsCount) { return; }
                 for (let i = postsCount; i < updtPosts.length; i++) {
-                    $('form[name="collect"]').append('<table width="100%" ' + 'border="0" cellspacing="1" cellpadding="3" id="peep' + i + '" class="f5simylatorpost f5new">' + updtPosts.eq(i).html() + '</table>' + '<div class="darkrow1" style="height:5px"></div>');}
+                    $('form[name="collect"]').append('<table width="100%" ' 
+                                                     + 'border="0" cellspacing="1" cellpadding="3" id="peep'
+                                                     + i
+                                                     + '" class="f5simylatorpost f5new">' 
+                                                     + updtPosts.eq(i).html() 
+                                                     + '</table>' 
+                                                     + '<div class="darkrow1" style="height:5px"></div>');}
                 postsCount += (updtPosts.length - postsCount);
                 $('link[rel="shortcut icon"]').attr("href", event.data.favicon);
                 if (postsCount => 1) {alert('Новый пост');}
